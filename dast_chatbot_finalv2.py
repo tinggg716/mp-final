@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+import streamlit as st
 
 from openai import OpenAI
 api_key = st.secrets["OPENAI_API_KEY"]
