@@ -180,7 +180,7 @@ if submit_button and user_input:
             # Generate assistant response using OpenAI API
             try:
                 response = openai.ChatCompletion.create(
-                    model="gpt-4",
+                    model="gpt-4o-mini",
                     messages=st.session_state.messages,
                     temperature=0.7,
                 )
