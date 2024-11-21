@@ -15,6 +15,10 @@ import streamlit as st
 
 from openai import OpenAI
 api_key = st.secrets["OPENAI_API_KEY"]
+# Initialize Streamlit app
+st.set_page_config(page_title="Interview Simulation for Information Gathering", layout="wide")
+st.title("🛠️ Information Gathering Interview Simulation")
+
 
 """
 before
@@ -113,9 +117,6 @@ def generate_feedback(messages):
     feedback += "\n**Keep practicing your questioning skills to improve your information-gathering abilities!**"
     return feedback
 
-# Initialize Streamlit app
-st.set_page_config(page_title="Interview Simulation for Information Gathering", layout="wide")
-st.title("🛠️ Information Gathering Interview Simulation")
 
 # Initialize session state for messages and feedback
 if "messages" not in st.session_state:
